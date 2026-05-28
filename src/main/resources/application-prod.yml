@@ -1,6 +1,7 @@
 spring:
   data:
     redis:
+      host: redis_1
       port: 6379
 
   datasource:
@@ -12,7 +13,7 @@ spring:
       auto-commit: false
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         format_sql: false
